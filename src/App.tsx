@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import LoadingSpinner from './components/LoadingSpinner';
+import AdSenseScript from './components/AdSenseScript';
 
 const Dashboard = lazy(() => import('./components/Dashboard'));
 const CalculatorPage = lazy(() => import('./components/CalculatorPage'));
@@ -39,6 +40,7 @@ function App(): JSX.Element {
           </Suspense>
         </main>
         <Footer />
+        <AdSenseScript />
       </div>
     </Router>
   );
